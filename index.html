@@ -24,7 +24,7 @@
         <!-- start header -->
         <header>
             <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg header-transparent bg-transparent center-logo disable-fixed">
+            <nav class="navbar navbar-expand-lg header-transparent bg-transparent center-logo disable-fixed" id="navbar">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 menu-logo">
                         <div class="header-icon">  
@@ -48,7 +48,7 @@
                             <ul class="navbar-nav navbar-left justify-content-end"> 
                                 <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="#acerca-de" class="nav-link">About Us</a></li>
-                                <li class="nav-item"><a href="#caracteristicas" class="nav-link">Characteristics</a></li>
+                                <li class="nav-item"><a href="#caracteristicas" class="nav-link">Properties</a></li>
                             </ul>
                             <ul class="navbar-nav navbar-right justify-content-start"> 
                                 <li class="nav-item"><a href="#ventajas" class="nav-link">Advantages</a></li> 
@@ -112,7 +112,7 @@
                                     <span class="fs-15 d-block mb-15px ls-4px text-uppercase" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>The production of our yerba mate is</span>
                                     <div class="alt-font fs-80 mb-15px sm-fs-60 xs-fs-50 w-80 lg-w-100 md-w-90 sm-w-100 mx-auto sm-mb-35px anime-text ls-minus-2px" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Organic and Agroecological"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'></div>  
                                     <span class="fs-15 d-block mb-15px ls-4px text-uppercase  mb-40px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>no added chemicals</span>
-                                    <a href="#infusiones" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
+                                    <a href="#acerca-de" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
                                         <span>
                                             <span class="btn-double-text" data-text="Learn More">Learn More</span> 
                                         </span>
@@ -129,7 +129,7 @@
                                 <div class="col-xl-8 col-lg-9 position-relative text-white text-center">
                                     <span class="fs-15 d-block mb-15px ls-4px text-uppercase" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>Jasy parks naturally</span>
                                     <div class="alt-font fs-80 sm-fs-60 xs-fs-50 mb-40px w-80 lg-w-100 md-w-90 sm-w-100 mx-auto sm-mb-35px anime-text ls-minus-2px" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Estacionamiento Natural de 2 Años"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'></div>  
-                                    <a href="#caracteristicas" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
+                                    <a href="#acerca-de" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
                                         <span>
                                             <span class="btn-double-text" data-text="Learn More">Learn More</span> 
                                         </span>
@@ -186,7 +186,7 @@
                         <h3 class="xs-text-center alt-font ls-minus-1px text-dark-gray w-80 xl-w-90 md-w-100 fw-600 " data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 0, "duration": 600, "staggervalue": 100, "easing": "easeOutQuad" }'>Features and Benefits</h3>
                         <p class="xs-text-center w-80 md-w-100 mb-40px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay": 200, "duration": 600, "staggervalue": 100, "easing": "easeOutQuad" }'>Our yerba mate Jasy is a unique and authentic experience, carefully produced to give you the best of nature.</p>
                         <div class="xs-text-center d-inline-block w-100" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1],  "delay":300, "duration": 600, "staggervalue": 300, "easing": "easeOutQuad" }'> 
-                            <a href="#infusiones" class="btn btn-small btn-double-border btn-border-base-color me-25px xs-me-15px">
+                            <a href="#ventajas" class="btn btn-small btn-double-border btn-border-base-color me-25px xs-me-15px">
                                 <span>
                                     <span class="btn-double-text" data-text="Learn More">Learn More</span> 
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
@@ -208,71 +208,73 @@
             </div>
         </section>
 
-        <section class="background-repeat mb-0 mt-0 pt-0 pb-40px" style="background-image:url('html/images/demo-spa-salon-home-bg-01.jpg');">
+        <section class="background-repeat mb-0 mt-0 pt-0 pb-40px xs-pb-0" style="background-image:url('html/images/demo-spa-salon-home-bg-01.jpg');">
             <div class="container ">
-                
                 <div class="row mb-0" id="ventajas">
-                    <span class="text-center fs-15 mb-15px text-base-color fw-500 d-block text-uppercase ls-2px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>a healthy life</span>
+                    <span class="text-center fs-15 mb-15px text-base-color fw-500 d-block text-uppercase ls-2px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>A HEALTHY LIFE</span>
                     <div class="col-12 text-center">
-                        <h3 class="alt-font text-dark-gray fw-600">Benefits of Yerba Mate </h3>
+                        <h3 class="alt-font text-dark-gray fw-600">Benefits of Yerba Mate</h3>
                     </div>
                 </div>
-               
             </div>
         </section>
 
-        <section class="pt-0 border-top border-color-light-gray md-border-top-0 background-repeat" style="background-image:url('html/images/demo-spa-salon-home-bg-01.jpg');">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-0" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 last-paragraph-no-margin hover-box md-mb-50px">
-                        <div class="process-step-icon-box position-relative top-minus-16px">
-                            <span class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center  border-radius-100 w-50px h-50px position-relative">
-                                <img src="html/images/antioxidantes.svg" class="w-70px" alt=""> 
 
-                            </div>
-                        </div>
-                        <h3 class="d-block alt-font text-dark-gray ls-minus-2px mb-5px">Antioxidant</h3>
-                       
+        <section class="background-repeat pt-0 pb-0" style="background-image:url('html/images/demo-spa-salon-home-bg-01.jpg');">
+            <div class="container">
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <ul class="pricing-table-style-12 pe-15px md-pe-0" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <li class="last-paragraph-no-margin"> 
+                                <img src="html/images/antioxidantes.svg" class="w-75px" alt=""> 
+                                <div class="ms-30px xs-ms-0 flex-grow-1">
+                                    <div class="d-flex align-items-center w-120 fs-18">
+                                        <span class="fs-22 alt-font text-dark-gray">Antioxidant</span>
+                                        <div class="divider-style-03 divider-style-03-02 border-color-light-gray flex-grow-1 ms-20px me-20px"></div>
+                                    </div>
+                                    <p>Combats cellular damage and strengthens the immune system</p>
+                                </div>
+                            </li>
+                            <li class="last-paragraph-no-margin"> 
+                                <img src="html/images/energy.svg" class="w-75px" alt=""> 
+                                <div class="ms-30px xs-ms-0 flex-grow-1">
+                                    <div class="d-flex align-items-center w-120 fs-18">
+                                        <span class="fs-22 alt-font text-dark-gray">Natural Energizer</span>
+                                        <div class="divider-style-03 divider-style-03-02 border-color-light-gray flex-grow-1 ms-20px me-20px"></div>
+                                    </div>
+                                    <p>Boosts energy</p>
+                                </div>
+                            </li>
+                          
+                        </ul>
                     </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 last-paragraph-no-margin hover-box md-mb-50px">
-                        <div class="process-step-icon-box position-relative top-minus-16px">
-                            <span class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center border-radius-100 w-50px h-50px position-relative">
-                                <img src="html/images/energy.svg" class="w-70px" alt=""> 
-                            </div>
-                        </div>
-                        <h3 class="d-block alt-font text-dark-gray ls-minus-2px mb-5px">Natural Energizer</h3>
-                        
+                    <div class="col-lg-6">
+                        <ul class="pricing-table-style-12 ps-15px md-ps-0 md-pt-20px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <li class="last-paragraph-no-margin"> 
+                                <img src="html/images/focus.svg" class="w-75px" alt=""> 
+                                <div class="ms-30px xs-ms-0 flex-grow-1">
+                                    <div class="d-flex align-items-center w-120 fs-18">
+                                        <span class="fs-22 alt-font text-dark-gray">Maintains Focus</span>
+                                        <div class="divider-style-03 divider-style-03-02 border-color-light-gray flex-grow-1 ms-20px me-20px"></div>
+                                    </div>
+                                    <p>Improves mental clarity
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="last-paragraph-no-margin"> 
+                                <img src="html/images/weight.svg" class="w-75px" alt=""> 
+                                <div class="ms-30px xs-ms-0 flex-grow-1">
+                                    <div class="d-flex align-items-center w-120 fs-18">
+                                        <span class="fs-22 alt-font text-dark-gray">Promotes weight loss</span>
+                                        <div class="divider-style-03 divider-style-03-02 border-color-light-gray flex-grow-1 ms-20px me-20px"></div>
+                                    </div>
+                                    <p>Relieves constipation and improves gastrointestinal health</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
                     </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 last-paragraph-no-margin hover-box sm-mb-50px">
-                        <div class="process-step-icon-box position-relative top-minus-16px">
-                            <span class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center border-radius-100 w-50px h-50px position-relative">
-                                <img src="html/images/focus.svg" class="w-70px" alt=""> 
-                            </div>
-                        </div>
-                        <h3 class="d-block alt-font text-dark-gray ls-minus-2px mb-5px">Maintains Focus</h3>
-                       
-                    </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col process-step-style-06 last-paragraph-no-margin hover-box">
-                        <div class="process-step-icon-box position-relative top-minus-16px">
-                            <span class="progress-step-separator bg-light-gray w-100 separator-line-1px opacity-1"></span>
-                            <div class="step-box d-flex align-items-center justify-content-center border-radius-100 w-50px h-50px position-relative">
-                                <img src="html/images/weight.svg" class="w-70px" alt=""> 
-                            </div>
-                        </div>
-                        <h3 class="d-block alt-font text-dark-gray ls-minus-2px mb-5px">Promotes weight loss</h3>
-                        
-                    </div>
-                    <!-- end process step item -->
                 </div>
             </div>
         </section>
@@ -280,13 +282,13 @@
         <section class="background-repeat mb-0 mt-0 pt-0 pb-30px" style="background-image:url('html/images/demo-spa-salon-home-bg-01.jpg');">
             <div class="container ">
                 <div class="row mb-50px pt-50px xs-mb-10px xs-pt-0px">
-                    <div class="overlap-section text-center mb-6 col-md-4 d-md-block">
+                    <div class=" text-center mb-6 mt-6 col-md-4 d-md-block">
                         <img src="html/images/no-sugar.png" alt="">
                     </div>
-                    <div class="overlap-section text-center mb-6 col-md-4 d-md-block">
+                    <div class="text-center mb-6 mt-6 col-md-4 d-md-block">
                         <img src="html/images/24month.png" alt="">
                     </div>
-                    <div class="overlap-section text-center mb-6 col-md-4 d-md-block">
+                    <div class=" text-center mb-6 mt-6 col-md-4 d-md-block">
                         <img src="html/images/gluten free.png" alt="">
                     </div>
                 </div>
@@ -616,14 +618,15 @@
         <footer class="half-footer pb-45px border-top border-color-light-gray background-repeat" style="background-image:url('html/images/demo-spa-salon-home-bg-01.jpg');">
             <div class="container">
                 <div class="overlap-section position-absolute left-0px right-0px text-center d-none d-md-inline-block" data-anime='{ "el": "childs", "translateY": [0, 0], "scale": [0.7, 1], "rotateZ": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <img src="html/images/jasy-logo.png" alt="" class="lg-w-20">
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6 last-paragraph-no-margin me-auto z-index-1 text-center text-sm-start xs-mb-20px">
                         <span class="fs-20 fw-500 text-dark-gray d-block mb-5px">Contact information</span>
                         <a href="mailto:hello@yerbamatejasy.com">hello@yerbamatejasy.com</a><br>
                     </div>
-                    
+                    <div class="col-lg-3 col-md-4 col-sm-6 last-paragraph-no-margin text-center text-sm-end z-index-1">
+                        <img src="html/images/jasy-logo.png" alt="" class="lg-w-20">
+                    </div>
                 </div>
                 <div class="row align-items-center justify-content-center mt-20px mb-10px md-mb-20px"> 
                     <div class="col d-none d-md-flex">
@@ -687,7 +690,47 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 function redirectUser(){
-    window.location.href = "https://jasy-landing-page.netlify.app/"
+    window.location.href = "https://es.yerbamatejasy.com"
+}
+
+let prevScrollpos = window.pageYOffset;
+let isAtTop = true;
+
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (currentScrollPos === 0) {
+        isAtTop = true;
+    } else {
+        isAtTop = false;
+    }
+
+    if (!isAtTop && prevScrollpos < currentScrollPos) {
+        document.getElementById("navbar").style.top = "-100px"
+        navbar.classList.remove('bg-nav')
+    } else {
+        document.getElementById("navbar").style.top = "0"
+        navbar.classList.add("bg-nav")
+    }
+    prevScrollpos = currentScrollPos;
 }
 
 </script>
+
+<style>
+    header #navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 99;
+    }
+    
+    .bg-nav {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+    
+    html {
+        scroll-behavior: smooth !important;
+    }
+    
+    </style>
