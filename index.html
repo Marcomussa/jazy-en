@@ -22,14 +22,18 @@
     </head>
     <body class="overflow-x-hidden" data-mobile-nav-style="classic">
         <!-- start header -->
-        <header>
+        <header id="nav-container">
             <!-- start navigation -->
             <nav class="navbar navbar-expand-lg header-transparent bg-transparent center-logo disable-fixed" id="navbar">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 menu-logo">
                         <div class="header-icon">  
                             <div class="header-social-icon icon">
-
+                                <a href="https://theargentino.com/collections/yerba-mate/products/jasy-yerba-mate-organic-1-kg-2-2-lb" target="_blank" class="xs-d-none btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
+                                    <span>
+                                        <span class="btn-double-text" data-text="Buy It">Buy It</span> 
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <a class="navbar-brand" href="index.html">
@@ -112,9 +116,9 @@
                                     <span class="fs-15 d-block mb-15px ls-4px text-uppercase" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>The production of our yerba mate is</span>
                                     <div class="alt-font fs-80 mb-15px sm-fs-60 xs-fs-50 w-80 lg-w-100 md-w-90 sm-w-100 mx-auto sm-mb-35px anime-text ls-minus-2px" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["Organic and Agroecological"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'></div>  
                                     <span class="fs-15 d-block mb-15px ls-4px text-uppercase  mb-40px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>no added chemicals</span>
-                                    <a href="#acerca-de" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
+                                    <a href="https://theargentino.com/collections/yerba-mate/products/jasy-yerba-mate-organic-1-kg-2-2-lb" target="_blank" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
                                         <span>
-                                            <span class="btn-double-text" data-text="Learn More">Learn More</span> 
+                                            <span class="btn-double-text" data-text="Buy It">Buy It</span> 
                                         </span>
                                     </a>
                                 </div>
@@ -127,7 +131,7 @@
                         <div class="container h-100">
                             <div class="row align-items-center h-100 justify-content-center">
                                 <div class="col-xl-8 col-lg-9 position-relative text-white text-center">
-                                    <span class="fs-15 d-block mb-15px ls-4px text-uppercase" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>Jasy parks naturally</span>
+                                    <span class="fs-15 d-block mb-15px ls-4px text-uppercase" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>Crafted Naturally</span>
                                     <div class="alt-font fs-80 sm-fs-60 xs-fs-50 mb-40px w-80 lg-w-100 md-w-90 sm-w-100 mx-auto sm-mb-35px anime-text ls-minus-2px" data-fancy-text='{ "opacity": [0, 1], "translateY": [50, 0], "string": ["2-Year Natural Aging"], "duration": 500, "delay": 200, "speed": 10, "easing": "easeOutQuad" }'></div>  
                                     <a href="#acerca-de" class="btn btn-medium fw-500 btn-double-border btn-border-color-transparent-white" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>
                                         <span>
@@ -648,7 +652,14 @@
                         <p>&COPY; 2024 <a href="index.html" target="_blank" class="text-decoration-line-bottom text-dark-gray fw-500">Jasy.</a> All rights reserved.</p>
                     </div>   
                     <div class="col-md-6 text-center text-md-end last-paragraph-no-margin"> 
-                        
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <p>Get it on:</p>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://theargentino.com/collections/yerba-mate/products/jasy-yerba-mate-organic-1-kg-2-2-lb" target="_blank" class="logoTheArgLink"><img src="html/images/logo_theArgentino_gris.png" alt="" class="lg-w-80"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -717,6 +728,15 @@ window.onscroll = function() {
 </script>
 
 <style>
+    .logoTheArgLink:hover img {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Duración de la transición y suavizado */
+  transform: translateY(-5px); /* Mover la imagen 5px hacia arriba */
+  opacity: 0.9;
+}
+
+.logoTheArgLink img {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Transición para el estado inicial */
+}
     header #navbar {
       position: fixed;
       top: 0;
@@ -732,5 +752,22 @@ window.onscroll = function() {
     html {
         scroll-behavior: smooth !important;
     }
+
+    @media only screen and (max-width: 600px){
+    .xs-center-column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .xs-center-column img {
+        margin-right: 0px !important;
+    }
+    .xs-center-column span {
+        width: 100%;
+    }
+    .xs-center-column .divider-style-03 {
+        display: none !important;
+    }
+}
     
     </style>
